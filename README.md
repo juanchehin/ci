@@ -1,6 +1,6 @@
-# Chehin Ingenieria
+# Chehin Ingeniería
 
-Chehin Ingenieria de Juan Martin Chehin
+Chehin Ingeniería de Juan Martin Chehin
 
 
 
