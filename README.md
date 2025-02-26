@@ -1,6 +1,6 @@
-# Chehin Ingeniería
+# CI Ingeniería
 
-Chehin Ingeniería de Juan Martin Chehin
+CI Ingeniería - informatica - sistemas
 
 
 
