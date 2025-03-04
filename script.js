@@ -9,6 +9,7 @@ const firebaseConfig = {
     measurementId: "G-K61D2JM6EH"
   };
 
+
 // Inicializar Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
@@ -29,9 +30,9 @@ async function registrarVisita() {
         ip: ip,
         fecha: timestamp
     }).then(() => {
-        console.log("Visita registrada con IP: " + ip);
+        // console.log("Visita registrada con IP: " + ip);
     }).catch(error => {
-        console.error("Error al registrar visita: ", error);
+        // console.error("Error al registrar visita: ", error);
     });
 }
 
