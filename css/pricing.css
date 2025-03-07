@@ -76,10 +76,11 @@
 }
 
 body {
-    background-image: url('../img/logo_contacto.png');
+    background-color: #000033;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
 
 .texto-mensaje {
     padding: 20% 1%;
