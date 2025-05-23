@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación de Planes | Tu Empresa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --basic: #3498db;
+            --intermediate: #f39c12;
+            --advanced: #27ae60;
+            --complete: #9b59b6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--primary);
+            background: linear-gradient(135deg, #f5f7fa, #e4e8eb);
+            margin-bottom: 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .plan-header {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+        
+        .basic-header {
+            background: linear-gradient(135deg, var(--basic), #2980b9);
+        }
+        
+        .intermediate-header {
+            background: linear-gradient(135deg, var(--intermediate), #e67e22);
+        }
+        
+        .advanced-header {
+            background: linear-gradient(135deg, var(--advanced), #2ecc71);
+        }
+        
+        .complete-header {
+            background: linear-gradient(135deg, var(--complete), #8e44ad);
+        }
+        
+        .plan-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 15px 0;
+            text-align: center;
+        }
+        
+        .basic-price {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--basic);
+        }
+        
+        .intermediate-price {
+            background-color: rgba(243, 156, 18, 0.1);
+            color: var(--intermediate);
+        }
+        
+        .advanced-price {
+            background-color: rgba(39, 174, 96, 0.1);
+            color: var(--advanced);
+        }
+        
+        .complete-price {
+            background-color: rgba(155, 89, 182, 0.1);
+            color: var(--complete);
+        }
+        
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+            font-weight: 500;
+            text-align: left;
+            color: var(--dark);
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .feature-name {
+            text-align: left;
+            font-weight: 500;
+            width: 25%;
+        }
+        
+        .highlight {
+            font-weight: 700;
+        }
+        
+        .best-value {
+            position: relative;
+        }
+        
+        .best-value::after {
+            content: "✓";
+            color: var(--advanced);
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            color: white;
+            transition: opacity 0.3s;
+        }
+        
+        .basic-button {
+            background: var(--basic);
+        }
+        
+        .intermediate-button {
+            background: var(--intermediate);
+        }
+        
+        .advanced-button {
+            background: var(--advanced);
+        }
+        
+        .complete-button {
+            background: var(--complete);
+        }
+        
+        .contact-button:hover {
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                overflow-x: auto;
+            }
+            .comparison-table {
+                width: auto;
+                min-width: 700px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Comparación de Planes</h1>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Características</th>
+                    <th class="plan-header basic-header">Plan Básico</th>
+                    <th class="plan-header intermediate-header">Plan Intermedio</th>
+                    <th class="plan-header advanced-header">Plan Avanzado</th>
+                    <th class="plan-header complete-header">Sistema Completo</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="plan-price basic-price">$25,000/mes</td>
+                    <td class="plan-price intermediate-price">$40,000/mes</td>
+                    <td class="plan-price advanced-price">$80,000/mes</td>
+                    <td class="plan-price complete-price">Consultar</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="feature-name">Productos en BD</th>
+                    <td>Hasta 500</td>
+                    <td>Hasta 5,000</td>
+                    <td class="highlight best-value">Ilimitado</td>
+                    <td>Personalizado</td>
+                </tr>
+                <tr>
+                    <th class="feature-name">Usuarios</th>
+                    <td>1</td>
+                    <td>Hasta 5</td>
+                    <td class="highlight best-value">Ilimitado</td>
+                    <td>Personalizado</td>
+                </tr>
+                <tr>
+                    <th class="feature-name">Usuario adicional</th>
+                    <td>$15,000/mes</td>
+                    <td>$15,000/mes</td>
+                    <td>$15,000/mes</td>
+                    <td>Consultar</td>
+                </tr>
+                <tr>
+                    <th class="feature-name">Transacciones/mes</th>
+                    <td>Hasta 200</td>
+                    <td>Hasta 2,000</td>
+                    <td class="highlight best-value">Ilimitado / 10,000+</td>
+                    <td>Escalable</td>
+                </tr>
+                <tr>
+                    <th class="feature-name">Soporte técnico</th>
+                    <td>-</td>
+                    <td>Email + WhatsApp<br>(25 consultas/mes)</td>
+                    <td class="highlight best-value">Prioritario<br>(100 consultas/mes)</td>
+                    <td>Personalizado</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#contact" class="contact-button basic-button">Contratar</a></td>
+                    <td><a href="#contact" class="contact-button intermediate-button">Contratar</a></td>
+                    <td><a href="#contact" class="contact-button advanced-button">Contratar</a></td>
+                    <td><a href="#contact" class="contact-button complete-button">Consultar</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
