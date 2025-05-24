@@ -39,6 +39,7 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            margin-bottom: 30px;
         }
         
         h1 {
@@ -175,6 +176,39 @@
             opacity: 0.9;
         }
         
+        .contact-info {
+            text-align: center;
+            padding: 25px;
+            background: var(--primary);
+            color: white;
+            border-radius: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info h2 {
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .phone-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin: 10px 0;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        .contact-email {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            display: block;
+        }
+        
         @media (max-width: 768px) {
             .container {
                 overflow-x: auto;
@@ -182,6 +216,9 @@
             .comparison-table {
                 width: auto;
                 min-width: 700px;
+            }
+            .phone-number {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -252,6 +289,13 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <div class="contact-info" id="contact">
+        <h2>¿Necesitas ayuda para elegir el mejor plan?</h2>
+        <div class="phone-number">📞 +54 9 3816 18-8101</div>
+        <span class="contact-email">✉️ infoci.informatica@gmail.com</span>
+        <p>Horario de atención: Lunes a viernes de 9 a 12:30 y 17 a 20:30 hs </p>
     </div>
 </body>
 
