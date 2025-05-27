@@ -5,21 +5,24 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ4FJ93RQK"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-PZ4FJ93RQK');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PZ4FJ93RQK');
     </script>
 
-    
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>
-        Precios Softwares
+        Precios | Planes
     </title>
 
     <link rel="stylesheet" href="./css/pricing.css">
@@ -57,56 +60,212 @@
 </header>
 
 <body>
-    
-    <a href="https://api.whatsapp.com/send?phone=+543816188101&text=Quiero chatear con alguien." class="floating" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+5493816188101&text=Quiero chatear con alguien." class="floating" target="_blank">
         <i class="fa fa-whatsapp float-button"></i>
     </a>
+    <header>
+        <div class="container">
+            <h1>Encuentra el plan perfecto para tu negocio</h1>
+            <p class="subtitle">Nuestros planes están diseñados para adaptarse a empresas de todos los tamaños. Elige el que mejor se ajuste a tus necesidades.</p>
+        </div>
+    </header>
 
     <div class="container">
-        <h2>¡Selecciona el plan segun tu necesidad de negocio!</h2>
-        <div class="price-row">
-            <div class="price-col">
-                <p>Basico</p>
-                <h3>$20000<span>/mes</span></h3>
-                <ul>
-                    <li>Operaciones por mes: Hasta 150</li>
-                    <li>1 usuario</li>
-                    <li>Usuarios adicionales: $5000/mes</li>
-                    <li>Acceso a todo el sistema</li>
-                </ul>
+        <div class="plans-container">
+            <div class="plan-card basic">
+                <div class="plan-header">
+                    <div class="plan-name">Plan Básico</div>
+                    <div class="plan-price">$25,000<span>/mes</span></div>
+                </div>
+                <div class="plan-features">
+                    <div class="feature">
+                        <div class="feature-name">Productos en BD</div>
+                        <div class="feature-value">Hasta 500</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Usuarios</div>
+                        <div class="feature-value">1</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Usuario adicional</div>
+                        <div class="feature-value">$15,000/mes</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Transacciones/mes</div>
+                        <div class="feature-value">Hasta 200</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Soporte técnico</div>
+                        <div class="feature-value">No incluido</div>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=+5493816188101&text=Quiero chatear con alguien." class="plan-button">Contratar</a>
             </div>
-            <div class="price-col">
-                <p>Medio</p>
-                <h3>$35000 <span>/mes</span></h3>
-                <ul>
-                    <li>Operaciones por mes: Hasta 250</li>
-                    <li>1 usuario</li>
-                    <li>Usuarios adicionales: $5000/mes</li>
-                    <li>Acceso a todo el sistema</li>
-                </ul>
+
+            <div class="plan-card intermediate">
+                <div class="plan-header">
+                    <div class="plan-name">Plan Intermedio</div>
+                    <div class="plan-price">$40,000<span>/mes</span></div>
+                </div>
+                <div class="plan-features">
+                    <div class="feature">
+                        <div class="feature-name">Productos en BD</div>
+                        <div class="feature-value">Hasta 5,000</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Usuarios</div>
+                        <div class="feature-value">Hasta 5</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Usuario adicional</div>
+                        <div class="feature-value">$15,000/mes</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Transacciones/mes</div>
+                        <div class="feature-value">Hasta 2,000</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Soporte técnico</div>
+                        <div class="feature-value">Email + WhatsApp (hasta 25 consultas/mes)</div>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=+5493816188101&text=Quiero chatear con alguien." class="plan-button">Contratar</a>
             </div>
-            <div class="price-col">
-                <p>Premium</p>
-                <h3>$45000<span>/mes</span></h3>
-                <ul>
-                    <li>Operaciones por mes: Sin limite</li>
-                    <li>1 usuario</li>
-                    <li>Usuarios adicionales: $5000/mes</li>
-                    <li>Acceso a todo el sistema</li>
-                </ul>
+
+            <div class="plan-card advanced">
+                <div class="plan-header">
+                    <div class="plan-name">Plan Avanzado</div>
+                    <div class="plan-price">$80,000<span>/mes</span></div>
+                </div>
+                <div class="plan-features">
+                    <div class="feature">
+                        <div class="feature-name">Productos en BD</div>
+                        <div class="feature-value">Ilimitado</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Usuarios</div>
+                        <div class="feature-value">Ilimitado</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Usuario adicional</div>
+                        <div class="feature-value">$15,000/mes</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Transacciones/mes</div>
+                        <div class="feature-value">Ilimitado / o 10,000+</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Soporte técnico</div>
+                        <div class="feature-value">Prioritario (hasta 100 consultas/mes)</div>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=+5493816188101&text=Quiero chatear con alguien." class="plan-button">Contratar</a>
+            </div>
+
+            <div class="plan-card complete">
+                <div class="plan-header">
+                    <div class="plan-name">Sistema Completo</div>
+                    <div class="plan-price">Consultar</div>
+                </div>
+                <div class="plan-features">
+                    <div class="feature">
+                        <div class="feature-name">Productos en BD</div>
+                        <div class="feature-value">Solución personalizada</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Usuarios</div>
+                        <div class="feature-value">Personalizado</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Usuario adicional</div>
+                        <div class="feature-value">Consultar</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Transacciones/mes</div>
+                        <div class="feature-value">Escalable</div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-name">Soporte técnico</div>
+                        <div class="feature-value">Solución a medida</div>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=+5493816188101&text=Quiero chatear con alguien." class="plan-button">Consultar</a>
             </div>
         </div>
-        <!--  -->
-        <div class="price-row">
-            <div class="col">
-            </div>
-            <div class="texto-mensaje">
-                <p>*Precios sujetos a cambios, consulte antes de realizar la compra</p>
-            </div>
-            <div class="col">
-            </div>
+
+        <h2 style="text-align: center; margin-bottom: 20px; color: var(--primary);">Comparación detallada de planes</h2>
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Plan Básico</th>
+                        <th>Plan Intermedio</th>
+                        <th>Plan Avanzado</th>
+                        <th>Sistema completo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">Cantidad de productos en BD</td>
+                        <td>Hasta 500</td>
+                        <td>Hasta 5,000</td>
+                        <td>Ilimitado</td>
+                        <td>Consultar</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Cantidad de usuarios (login al sistema)</td>
+                        <td>1</td>
+                        <td>Hasta 5</td>
+                        <td>Ilimitado</td>
+                        <td>Consultar</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Usuario adicional</td>
+                        <td>$15,000/mes</td>
+                        <td>$15,000/mes</td>
+                        <td>$15,000/mes</td>
+                        <td>Consultar</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Transacciones por mes</td>
+                        <td>Hasta 200</td>
+                        <td>Hasta 2,000</td>
+                        <td>Ilimitado / o 10,000+</td>
+                        <td>Consultar</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Soporte técnico</td>
+                        <td>-</td>
+                        <td>Email + WhatsApp en horario de atención<br>Hasta 25 consultas/mes</td>
+                        <td>Prioritario (email, WhatsApp, remoto) en horario de atención<br>Hasta 100 consultas/mes</td>
+                        <td>Consultar</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td class="feature-name">Costo mensual (ARS)</td>
+                        <td>$25,000</td>
+                        <td>$40,000</td>
+                        <td>$80,000</td>
+                        <td>Consultar</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+
+    <footer id="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="copyright">Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
